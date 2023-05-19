@@ -14,7 +14,7 @@ export async function getUser() {
     },
   };
   const response = await fetch(
-    `${process.env.REACT_APP_HOST}/users/${browserData.cbid}`,
+    `${process.env.REACT_APP_HOST}/600/users/${browserData.cbid}`,
     requestOptions
   );
   if (!response.ok) {
@@ -34,7 +34,7 @@ export async function getUserOrders() {
     },
   };
   const response = await fetch(
-    `${process.env.REACT_APP_HOST}/orders?user.id=${browserData.cbid}`,
+    `${process.env.REACT_APP_HOST}/600/orders?user.id=${browserData.cbid}`,
     requestOptions
   );
   if (!response.ok) {
