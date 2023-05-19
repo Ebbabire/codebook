@@ -16,7 +16,6 @@ export const Register = () => {
         password: event.target.password.value,
       };
       const data = await register(authDetail);
-      console.log(data);
       data.accessToken ? navigate("/products") : toast.error(data);
     } catch (error) {
       toast.error(error.message, {
