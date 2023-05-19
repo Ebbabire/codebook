@@ -13,6 +13,7 @@ export const DashboardPage = () => {
     async function fetchOrders() {
       try {
         const data = await getUserOrders();
+
         setOrders(data);
       } catch (error) {
         toast.error(error.message, {
